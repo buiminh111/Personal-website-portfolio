@@ -14,7 +14,7 @@
     --spacing-4: 24px;
 
     --border-radius: 12px;
-
+    --font-size:15px;
     --font-color: #323232;
 }
 
@@ -134,4 +134,36 @@ a{
     .portrait{
         margin-bottom: var(--spacing-4);
     }
+}
+
+/*! GALLERY */
+
+.gallery-container{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.cards-container{
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    padding: var(--spacing-4);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cards-container h3 {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: var(--font-size);
 }
