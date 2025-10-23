@@ -140,30 +140,17 @@ a{
 
 .gallery-container{
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px;
-    max-width: 100%;
+    padding: 0;
 }
 
 .cards-container{
-    position: relative;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    padding: var(--spacing-4);
-    border-radius: var(--border-radius);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    aspect-ratio: 1 / 1 ;
 }
 
-.cards-container h3 {
-    background-color: white;
-    text-align: center;
+.card-images{
     width: 100%;
-    margin: 0;
-    padding: 10px;
-    font-size: var(--font-size);
+    height: 100%;
+    object-fit: cover;
 }
