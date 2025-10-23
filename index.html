@@ -5,24 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
     <nav>
-        <h2 id="logo">BQM</h2>
+        <h2 id="logo"><a href="index.html">BQM</a></h2>
         <ul class="navigation-items">
-            <li class="navigation-item"><a href="">About Me</a></li>
+            <li class="navigation-item"><a href="/">About Me</a></li>
             <li class="navigation-item"><a href="">Projects</a></li>
             <li class="navigation-item"><a href="">Skills</a></li>
-            <li class="navigation-item"><a href="">Contact</a></li>
+            <li class="navigation-item"><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <main>
         <section id="about-me">
             <div class="about-me-container">
-                    <div class="about-me-text-container"></div>
-                    <img src="" alt="" class="portrait">
+                    <div class="about-me-text-container">
+                        <h2>About Me</h2>
+                        <p> Hi! I'm Ada, Countess of Lovelace and am an English mathematician
+                            and writer, chiefly known for my work on Charles Babbage's
+                            proposed mechanical general-purpose computer, the Analytical
+                            Engine.
+                        </p>
+                        <br>
+                        <p>
+                            I am one of the first to recognize that machines have applications
+                            beyond pure calculation, and to have published the first algorithm
+                            intended to be carried out by such a machine.
+                        </p>
+                        br
+                        <p>
+                            In my free time I like to read about scientific developments,
+                            mathematics, and computational mathematics. I also like to take my
+                            chances of winning big.
+                        </p>
+                    </div>
+                    <img src="./resources/IMG/profile pic.jpg" alt="Showing profile picture of the websire's owner" class="portrait">
             </div>
         </section>
 
@@ -32,35 +52,36 @@
                 <summary class="project-title">
                     <h3> The Restaurant Website </h3>
                 </summary>
-                <img src="" alt="">
+                <img src="./resources/IMG/DSC06925_3.jpg" alt="" class="project-image">
                 <p class="project-description">The first HTML/CSS project </p>
             </details>
             <details class="project">
                 <summary class="project-title">
                     <h3>The Wishes Generator</h3>
                 </summary>
-                <img src="" alt="">
+                <img src="./resources/IMG/DSC06925_4.jpg" alt="" class="project-image">
                 <p class="project-description">The first JS project </p>
             </details>
             <details class="project">
                 <summary class="project-title">
                     <h3>The Personal Website</h3>
                 </summary>
-                <img src="" alt="">
+                <img src="./resources/IMG/DSC06925_6.jpg" alt="" class="project-image">
                 <p class="project-description">The first frontend project with HTML/CSS/JS</p>
             </details>
         </section>
         
         <section id="skills">
             <h2>Skills</h2>
-            <div class="skills-container">
+            <div class="icon-container">
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-css3-alt"></i>
                 <i class="fab fa-js"></i>
+                <i class="fab fa-face"></i>
             </div>
         </section>
     </main>  
 </body>
 
-<footer></footer>
+<footer><small>Copyright © 2025 Minh Bui</small></footer>
 </html>
