@@ -67,10 +67,15 @@ main{
     margin-left: auto;
 }
 
-.navigation-item{
+.navigation-item {
     margin: var(--spacing-1);
 
 }
+
+.navigation-item a:hover {
+    color: gray;
+}
+
 
 .portrait {
     width: 300px;
@@ -156,17 +161,25 @@ a{
     padding: 0;
 }
 
-.cards-container{
+.panel-image{
     aspect-ratio: 1 / 1 ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 
-.card-images{
+.panel-title {
+    margin-top: var(--spacing-1);
+    font-size: 15px;
+}
+
+.image{
     border-radius: var(--border-radius);
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.cards-container h3 {
-    font-size: 15px;
 }
