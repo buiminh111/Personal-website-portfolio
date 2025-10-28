@@ -164,12 +164,39 @@ a{
 .panel-image{
     aspect-ratio: 1 / 1 ;
     position: relative;
+    overflow: hidden;
+}
+
+.panel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.overlay:hover{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.panel-btn {
+    background-color: whitesmoke;
+    padding: var(--spacing-1);
+    border-radius: var(--border-radius);  
+}
+.panel-btn:hover{
+    filter: brightness(90%);
 }
 
 .panel-title {
@@ -177,9 +204,4 @@ a{
     font-size: 15px;
 }
 
-.image{
-    border-radius: var(--border-radius);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
